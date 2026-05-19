@@ -6,9 +6,53 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Digital Marketing & SEO Services | How to Contact",
+  title: "Digital Marketing Services | How to Contact",
+
+  description:
+    "Professional SEO, branding, and digital marketing solutions for businesses worldwide.",
+
+  alternates: {
+    canonical: "https://howtocontact.live/services/digital-marketing",
+  },
+
+  openGraph: {
+    title: "Digital Marketing Services | How to Contact",
+
     description:
-        "Expert digital marketing, SEO, PPC, and social media solutions to grow your business online.",
+      "Professional SEO, branding, and digital marketing solutions for businesses worldwide.",
+
+    url: "https://howtocontact.live/services/digital-marketing",
+
+    siteName: "How to Contact",
+
+    images: [
+      {
+        url: "https://howtocontact.live/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Digital Marketing Services",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Digital Marketing Services | How to Contact",
+
+    description:
+      "Professional SEO, branding, and digital marketing solutions for businesses worldwide.",
+
+    images: ["https://howtocontact.live/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const DigitalMarketing = () => {

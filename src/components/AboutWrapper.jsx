@@ -12,8 +12,53 @@ import {
 } from "react-icons/fi";
 
 export const metadata = {
-    title: "About How to Contact",
-    description: "Global IT consulting and tech support services",
+  title: "About Us | How to Contact",
+
+  description:
+    "Learn more about How to Contact and our professional IT consulting and technical support services worldwide.",
+
+  alternates: {
+    canonical: "https://howtocontact.live/about",
+  },
+
+  openGraph: {
+    title: "About Us | How to Contact",
+
+    description:
+      "Learn more about How to Contact and our professional IT consulting and technical support services worldwide.",
+
+    url: "https://howtocontact.live/about",
+
+    siteName: "How to Contact",
+
+    images: [
+      {
+        url: "https://howtocontact.live/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About How to Contact",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "About Us | How to Contact",
+
+    description:
+      "Learn more about How to Contact and our professional IT consulting and technical support services worldwide.",
+
+    images: ["https://howtocontact.live/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function AboutWrapper() {

@@ -1,9 +1,60 @@
-"use client";
+
 
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+
+export const metadata = {
+  title: "PC & Laptop Repair Services | How to Contact",
+
+  description:
+    "Get professional PC and laptop repair, troubleshooting, maintenance, and technical support services worldwide.",
+
+  alternates: {
+    canonical: "https://howtocontact.live/services/pc-laptop-solution",
+  },
+
+  openGraph: {
+    title: "PC & Laptop Repair Services | How to Contact",
+
+    description:
+      "Get professional PC and laptop repair, troubleshooting, maintenance, and technical support services worldwide.",
+
+    url: "https://howtocontact.live/services/pc-laptop-solution",
+
+    siteName: "How to Contact",
+
+    images: [
+      {
+        url: "https://howtocontact.live/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "PC and Laptop Repair Services",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "PC & Laptop Repair Services | How to Contact",
+
+    description:
+      "Get professional PC and laptop repair, troubleshooting, maintenance, and technical support services worldwide.",
+
+    images: ["https://howtocontact.live/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const PcLaptopSolution = () => {
     const services = [

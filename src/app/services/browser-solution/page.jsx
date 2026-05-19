@@ -8,9 +8,53 @@ import Footer from "@/components/Footer";
 
 
 export const metadata = {
-  title: "Browser Support & Web Solutions | How to Contact",
+  title: "Browser Solution Services | How to Contact",
+
   description:
-    "Fix browser crashes, slow speed, and errors in Chrome, Firefox, or Edge with expert support.",
+    "Get professional browser troubleshooting, setup, and support services from How to Contact.",
+
+  alternates: {
+    canonical: "https://howtocontact.live/services/browser-solution",
+  },
+
+  openGraph: {
+    title: "Browser Solution Services | How to Contact",
+
+    description:
+      "Get professional browser troubleshooting, setup, and support services from How to Contact.",
+
+    url: "https://howtocontact.live/services/browser-solution",
+
+    siteName: "How to Contact",
+
+    images: [
+      {
+        url: "https://howtocontact.live/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Browser Solution Services",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Browser Solution Services | How to Contact",
+
+    description:
+      "Get professional browser troubleshooting, setup, and support services from How to Contact.",
+
+    images: ["https://howtocontact.live/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BrowserSolution() {

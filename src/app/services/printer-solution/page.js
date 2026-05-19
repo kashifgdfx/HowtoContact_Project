@@ -7,9 +7,53 @@ import Footer from "@/components/Footer";
 
 
 export const metadata = {
-  title: "Printer Support & Solutions | How to Contact",
+  title: "Printer Support & Repair Services | How to Contact",
+
   description:
-    "Expert help for printer offline issues, driver errors, paper jams, and wireless problems.",
+    "Professional printer installation, troubleshooting, repair, and maintenance support services available worldwide.",
+
+  alternates: {
+    canonical: "https://howtocontact.live/services/printer-solution",
+  },
+
+  openGraph: {
+    title: "Printer Support & Repair Services | How to Contact",
+
+    description:
+      "Professional printer installation, troubleshooting, repair, and maintenance support services available worldwide.",
+
+    url: "https://howtocontact.live/services/printer-solution",
+
+    siteName: "How to Contact",
+
+    images: [
+      {
+        url: "https://howtocontact.live/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Printer Support Services",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Printer Support & Repair Services | How to Contact",
+
+    description:
+      "Professional printer installation, troubleshooting, repair, and maintenance support services available worldwide.",
+
+    images: ["https://howtocontact.live/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrinterSolution() {
@@ -113,7 +157,7 @@ export default function PrinterSolution() {
 
   return (
     <div className="bg-white overflow-hidden">
-  
+
 
       {/* HERO SECTION */}
       <section className="relative w-full bg-[#193315] overflow-hidden border-b-4 border-[#193315]">
@@ -331,14 +375,14 @@ export default function PrinterSolution() {
 
             {/* RIGHT IMAGE */}
             <div className="absolute right-0 top-0 h-full w-[45%] md:w-[40%] flex items-center justify-center">
-  <Image
-    src="/Contact.jpg"
-    alt="Customer support representative"
-    width={350}
-    height={350}
-    className="h-[85%] w-auto object-contain rounded-full"
-  />
-</div>
+              <Image
+                src="/Contact.jpg"
+                alt="Customer support representative"
+                width={350}
+                height={350}
+                className="h-[85%] w-auto object-contain rounded-full"
+              />
+            </div>
 
             {/* LEFT CONTENT */}
             <div className="absolute left-0 top-0 h-full w-[85%] md:w-[65%] lg:w-[58%] bg-[#9FF791] rounded-r-[180px] md:rounded-r-[220px] flex items-center shadow-sm z-10">
@@ -360,7 +404,7 @@ export default function PrinterSolution() {
         </div>
       </section>
 
-     
+
     </div>
   );
 }

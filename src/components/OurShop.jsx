@@ -8,27 +8,33 @@ const shopItems = [
         subtitle: "Solution for all problems",
         image: "/printerimg.jpg",
         alt: "Expert printer troubleshooting and repair services",
+        link: "/services/printer-solution",
     },
+
     {
         title: "Laptop",
         subtitle: "Sell Solution for all Brands",
         image: "/laptopimg.jpg",
         alt: "Professional laptop repair and multi-brand support",
+        link: "/services/pc-laptop-solution",
     },
+
     {
         title: "Antivirus",
         subtitle: "Remove all Virus",
         image: "/antivirusimg.jpg",
         alt: "Complete antivirus protection and virus removal service",
+        link: "/services/software",
     },
+
     {
         title: "Desktop",
         subtitle: "All Brand Desktop Support",
         image: "/desktopimg.jpg",
         alt: "All-in-one desktop computer technical support",
+        link: "/services/digital-marketing",
     },
 ];
-
 const businessCards = [
     {
         title: "24*7 Technical Help",
@@ -94,10 +100,11 @@ const OurShop = () => {
                                     <p className="text-lg mt-2 font-medium">
                                         {item.subtitle}
                                     </p>
-
+                                <Link href={item.link}>
                                     <button className="mt-5 bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-[#193315] hover:text-white transition duration-300">
                                         See More
                                     </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

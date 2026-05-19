@@ -1,5 +1,5 @@
 import { FiArrowRight, FiCheckCircle, FiPhoneCall } from "react-icons/fi";
-
+import Link from "next/link";
 const trustPoints = [
     "24/7 expert support",
     "Secure IT maintenance",
@@ -17,11 +17,11 @@ const Hero = () => {
         <section className="relative isolate overflow-hidden bg-[#F4F8F2]">
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(118,206,104,0.25),_transparent_34%),linear-gradient(135deg,_#F8FCF6_0%,_#FFFFFF_46%,_#EAF5E6_100%)]" />
 
-            <div className="mx-auto grid min-h-[720px] w-full max-w-7xl items-center gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:px-10 lg:py-16">
+            <div className=" mx-auto grid min-h-[720px] w-full max-w-7xl items-center gap-24 px-5 py-12 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:px-10 lg:py-16">
                 <div className="relative order-2 lg:order-1">
-                    <div className="absolute -left-6 top-10 hidden h-40 w-40 rounded-full bg-[#76CE68]/20 blur-2xl lg:block" />
+                    <div className=" absolute -left-6 top-10 hidden h-40 w-40 rounded-full bg-[#76CE68]/20 blur-2xl lg:block" />
 
-                    <div className="relative overflow-hidden rounded-[32px] bg-[#193315] shadow-[0_28px_80px_rgba(7,20,5,0.24)]">
+                    <div className=" relative overflow-hidden rounded-[32px] bg-[#193315] shadow-[0_28px_80px_rgba(7,20,5,0.24)]">
                         <img
                             src="/Banner1.jpg"
                             alt="Global IT Consulting and Tech Support Services"
@@ -63,7 +63,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="order-1 lg:order-2">
+                <div className=" order-1 lg:order-2">
                     <div className="mx-auto max-w-xl lg:ml-auto">
                         <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#76CE68]/40 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#2E5628] shadow-sm">
                             <span className="h-2 w-2 rounded-full bg-[#76CE68]" />
@@ -101,13 +101,13 @@ const Hero = () => {
                                 +1 877-894-9715
                             </a>
 
-                            <a
-                                href="#services"
+                            <Link
+                                href="/services/printer-solution"
                                 className="inline-flex items-center justify-center gap-2 rounded-full border border-[#B9DDB2] bg-white px-6 py-4 text-sm font-bold uppercase tracking-[0.12em] text-[#193315] transition hover:border-[#76CE68] hover:text-[#2E5628]"
                             >
                                 Explore services
                                 <FiArrowRight className="text-lg" />
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="mt-10 grid grid-cols-3 divide-x divide-[#CFE5C9] rounded-2xl border border-[#DDEED8] bg-white/80 p-5 shadow-sm backdrop-blur">
