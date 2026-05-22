@@ -25,7 +25,7 @@ const Hero = () => {
                         <img
                             src="/Banner1.jpg"
                             alt="Global IT Consulting and Tech Support Services"
-                            className="h-[420px] w-full object-cover sm:h-[540px] lg:h-[620px]"
+                            className="h-[420px] w-full object-cover sm:h-[540px] lg:h-[620px] "
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#071405]/90 via-[#071405]/35 to-transparent" />
                         <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 lg:p-10">
@@ -46,7 +46,7 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div className="absolute -right-3 top-8 rounded-2xl border border-white/70 bg-white/95 p-4 shadow-2xl sm:-right-6 sm:p-5">
+                    <div className="absolute -right-3 top-2 rounded-2xl border border-white/70 bg-white/95 p-4 shadow-2xl sm:-right-6 sm:p-5">
                         <div className="flex items-center gap-3">
                             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EAF8E7] text-[#2E5628]">
                                 <FiCheckCircle className="text-2xl" />
@@ -98,7 +98,7 @@ const Hero = () => {
                                 className="inline-flex items-center justify-center gap-3 rounded-full bg-[#193315] px-6 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white shadow-lg shadow-[#193315]/20 transition hover:bg-[#2E5628]"
                             >
                                 <FiPhoneCall className="text-lg" />
-                                +1 877-894-9715
+                                +1 XXXXXXXX
                             </a>
 
                             <Link

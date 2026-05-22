@@ -194,7 +194,7 @@ const BlogDetails = () => {
               <img
                 src={blog.image.url}
                 alt={blog.image.alt || blog.title}
-                className="h-full max-h-[650px] w-full object-cover"
+                className="h-full  w-full object-cover object-top"
               />
             </div>
           </div>

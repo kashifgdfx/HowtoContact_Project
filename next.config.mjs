@@ -2,7 +2,11 @@
 const nextConfig = {
   reactCompiler: true,
 
+  output: "export",
+
   images: {
+    unoptimized: true,
+
     remotePatterns: [
       {
         protocol: "https",

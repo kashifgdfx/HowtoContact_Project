@@ -116,7 +116,7 @@ const Blogs = () => {
                     <img
                       src={blog.image?.url}
                       alt={blog.image?.alt || "blog image"}
-                      className="h-full w-full object-cover transition-all duration-700 group-hover:scale-110"
+                      className="h-full w-full object-cover object-top transition-all duration-700 group-hover:scale-110"
                     />
 
                     {/* IMAGE OVERLAY */}
