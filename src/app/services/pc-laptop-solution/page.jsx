@@ -60,62 +60,62 @@ const PcLaptopSolution = () => {
     const services = [
         {
             title: "New PC / Laptop Setup & Deployment",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Operating System Installation & Upgrade",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "System Performance Optimization",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Hardware Diagnostics & Troubleshooting",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "RAM / SSD / HDD Upgrade Support",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Data Backup & Recovery Solutions",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Network & Internet Configuration",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "System Security & Protection Setup",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Software & Driver Management",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Remote Desktop & Global IT Support",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "System Error & Blue Screen Fix",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Preventive Maintenance & Health Monitoring",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
     ];
@@ -131,7 +131,7 @@ const PcLaptopSolution = () => {
                     {/* LEFT IMAGE */}
                     <div className="w-full lg:w-[70%] h-64 lg:h-full relative z-0">
                         <Image
-                            src="/pc-hero.jpg"
+                            src="/pc-hero.webp"
                             alt="Modern laptop and PC workspace"
                             fill
                             className="object-cover"
@@ -174,7 +174,7 @@ const PcLaptopSolution = () => {
                             <div className="relative w-full text-center lg:text-left">
 
                                 <Image
-                                    src="/Green.png"
+                                    src="/Green.webp"
                                     alt="Laptop repair illustration"
                                     width={700}
                                     height={700}
@@ -201,7 +201,7 @@ const PcLaptopSolution = () => {
                             {/* BOTTOM IMAGE */}
                             <div className="w-full mt-6">
                                 <Image
-                                    src="/Browser3.png"
+                                    src="/Browser3.webp"
                                     alt="PC optimization process"
                                     width={800}
                                     height={400}
@@ -320,7 +320,7 @@ const PcLaptopSolution = () => {
                         <div className="absolute right-0 top-0 h-full w-[45%] md:w-[40%] flex items-center justify-center">
 
                             <Image
-                                src="/Contact.jpg"
+                                src="/Contact.webp"
                                 alt="Technical support expert"
                                 width={350}
                                 height={350}

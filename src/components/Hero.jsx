@@ -5,6 +5,7 @@ const trustPoints = [
     "Secure IT maintenance",
     "Software and digital growth",
 ];
+import Image from "next/image";
 
 const stats = [
     { value: "100%", label: "Satisfaction" },
@@ -15,22 +16,26 @@ const stats = [
 const Hero = () => {
     return (
         <section className="relative isolate overflow-hidden bg-[#F4F8F2]">
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(118,206,104,0.25),_transparent_34%),linear-gradient(135deg,_#F8FCF6_0%,_#FFFFFF_46%,_#EAF5E6_100%)]" />
+            <div className="absolute inset-0 -z-10 bg-[#F4F8F2]" />
 
-            <div className=" mx-auto grid min-h-[720px] w-full max-w-7xl items-center gap-24 px-5 py-12 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:px-10 lg:py-16">
+            <div className=" mx-auto grid min-h-[620px] w-full max-w-7xl items-center gap-24 px-5 py-12 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:px-10 lg:py-16">
                 <div className="relative order-2 lg:order-1">
                     <div className=" absolute -left-6 top-10 hidden h-40 w-40 rounded-full bg-[#76CE68]/20 blur-2xl lg:block" />
 
-                    <div className=" relative overflow-hidden rounded-[32px] bg-[#193315] shadow-[0_28px_80px_rgba(7,20,5,0.24)]">
-                        <img
-                            src="/Banner1.jpg"
-                            alt="Global IT Consulting and Tech Support Services"
-                            className="h-[420px] w-full object-cover sm:h-[540px] lg:h-[620px] "
-                        />
+                    <div className=" relative h-[420px] sm:h-[540px] lg:h-[620px] overflow-hidden rounded-[32px] bg-[#193315] shadow-xl">
+                   <Image
+  src="/Banner1.webp"
+  alt="Global IT Consulting and Tech Support Services"
+  fill
+  priority
+  quality={75}
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="object-cover"
+/>
                         <div className="absolute inset-0 bg-gradient-to-t from-[#071405]/90 via-[#071405]/35 to-transparent" />
                         <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 lg:p-10">
                             <div className="max-w-xl">
-                                <p className="mb-3 inline-flex rounded-full border border-white/25 bg-white/15 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-white backdrop-blur">
+                                <p className="mb-3 inline-flex rounded-full border border-white/25 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-white blur-2xl">
                                     Free consultation
                                 </p>
 

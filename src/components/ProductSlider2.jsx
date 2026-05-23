@@ -12,12 +12,12 @@ const products = [
     {
         title: "Real-Time Threat Protection",
         desc: "Always-on security that detects and blocks cyber threats in real time, keeping your systems safe and secure.",
-        image: "/Anti2.jpg",
+        image: "/sliderimg2.webp",
     },
     {
         title: "Anti Virus",
         desc: "We provide advanced antivirus and cybersecurity solutions to protect your systems from viruses",
-        image: "/antivirusimg.jpg",
+        image: "/sliderimg1.webp",
     },
     {
         title: "Antivirus Setup & Optimization",

@@ -132,7 +132,7 @@ export default function BrowserSolution() {
           {/* LEFT IMAGE */}
           <div className="w-full md:w-1/2 h-[300px] md:h-[390px] relative flex items-center justify-center">
             <Image
-              src='/Browser.png'
+              src='/Browser.webp'
               alt="Professional browser support"
               width={600}
               height={500}
@@ -175,7 +175,7 @@ export default function BrowserSolution() {
             <div className="w-full lg:w-1/2">
               <div className="relative w-full mt-10 flex justify-center">
                 <Image
-                  src="/Browser1.png"
+                  src="/Browser1.webp"
                   alt="Browser optimization"
                   width={700}
                   height={500}
@@ -199,7 +199,7 @@ export default function BrowserSolution() {
 
               <div className="w-full mt-6">
                 <Image
-                  src="/Browser2.png"
+                  src="/Browser2.webp"
                   alt="Browser dashboard"
                   width={700}
                   height={400}
@@ -320,7 +320,7 @@ export default function BrowserSolution() {
             <div className="absolute right-0 top-0 h-full w-[45%] md:w-[40%] flex items-center justify-center">
 
               <Image
-                src='/Contact.jpg'
+                src='/Contact.webp'
                 alt="Browser support expert"
                 width={350}
                 height={350}

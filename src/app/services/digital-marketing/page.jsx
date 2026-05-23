@@ -59,62 +59,62 @@ const DigitalMarketing = () => {
     const services = [
         {
             title: "Website Design & Development",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Custom Software Development",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Search Engine Optimization (SEO)",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Social Media Optimization (SMO)",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Advertising (Google & Social Ads)",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Content Marketing & Strategy",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Email Marketing Campaigns",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Online Reputation Management",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Analytics, Tracking & Reporting",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Global Brand Growth Strategy",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Manage My Online Reputation",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
         {
             title: "Create Content Strategy",
-            icon: "/Printer.png",
+            icon: "/Printer.webp",
             link: "/contact",
         },
     ];
@@ -130,7 +130,7 @@ const DigitalMarketing = () => {
                     {/* LEFT IMAGE */}
                     <div className="w-full md:w-1/2 h-[500px] md:h-[560px] relative">
                         <Image
-                            src="/DigitalService.jpg"
+                            src="/DigitalService.webp"
                             alt="Comprehensive digital marketing services for global business growth"
                             fill
                             className="object-cover mt-10"
@@ -165,7 +165,7 @@ const DigitalMarketing = () => {
                         <div className="w-full lg:w-1/2 flex justify-center">
                             <div className="relative w-full max-w-lg">
                                 <Image
-                                    src="/service.png"
+                                    src="/Service.webp"
                                     alt="Illustration showing SEO, Social Media, and Web Development strategies"
                                     width={700}
                                     height={700}

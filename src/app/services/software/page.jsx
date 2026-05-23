@@ -61,62 +61,62 @@ const Software = () => {
     const services = [
         {
             title: "Software Installation & Configuration",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Licensed Software Activation & Support",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Antivirus & Endpoint Protection Setup",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Malware, Virus & Threat Remova",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Software Crash & Error Resolution",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Software Update & Patch Management",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Compatibility & Integration Support",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Software Uninstallation & Cleanup",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: " System Resource Optimization",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Data Protection & Software Backup",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Remote Software Troubleshooting",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
         {
             title: "Enterprise Software Suppor",
-            icon: '/Printer.png',
+            icon: '/Printer.webp',
             link: "/contact",
         },
     ];
@@ -129,7 +129,7 @@ const Software = () => {
                 <div className="relative flex flex-col lg:flex-row min-h-[500px] lg:h-[600px] w-full">
                     <div className="w-full lg:w-[60%] h-64 lg:h-full relative z-0">
                         <Image
-                            src="/Laptop3.jpg"
+                            src="/Laptop3.webp"
                             alt="Expert software programming and application troubleshooting support"
                             fill
                             className="object-cover"
@@ -189,7 +189,7 @@ const Software = () => {
 
                             <div className="relative w-full text-center lg:text-left">
                                 <Image
-                                    src="/Browser2.png"
+                                    src="/Browser2.webp"
                                     alt="Cybersecurity and licensed software protection management"
                                     width={700}
                                     height={700}
@@ -288,7 +288,7 @@ const Software = () => {
 
                         <div className="absolute right-0 top-0 h-full w-[45%] md:w-[40%] flex items-center justify-center">
                             <Image
-                                src="/Contact.jpg"
+                                src="/Contact.webp"
                                 alt="Get 24/7 remote software support from certified technicians"
                                 width={350}
                                 height={350}

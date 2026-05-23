@@ -8,17 +8,17 @@ const products = [
   {
     title: "Printer Solution",
     desc: "We provide complete printer support solutions to keep your business running.",
-    image: "/Printer3.jpg",
+    image: "/Printer3.webp",
   },
   {
     title: "Complete Printer Solutions",
     desc: "End-to-end printer services including installation, network setup, optimization, and remote troubleshooting.",
-    image: "/Printer5.jpg",
+    image: "/Printer5.webp",
   },
   {
     title: "Business-Ready Printer Services",
     desc: "Reliable printer solutions tailored for office and enterprise environments.",
-    image: "/Printer4.jpg",
+    image: "/Printer4.webp",
   },
 ];
 
