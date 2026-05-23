@@ -59,7 +59,7 @@ export default function ContactPage() {
         {/* Left: Image Block */}
         <div className="relative w-full md:w-1/2 h-64 md:h-full">
           <Image
-            src="/Contact8.png"
+            src="/contact-og.jpg"
             alt="HowToContact Support Team"
             fill
             className="object-cover"
@@ -155,7 +155,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-[#193315]">Phone</h3>
                     <p className="text-slate-500 text-sm mt-1">
-                      +1-307-412-5782
+                      +X-XXX-XXX-XXXX
                     </p>
                   </div>
                 </div>
@@ -219,7 +219,7 @@ export default function ContactPage() {
                         name="phone"
                         id="phone"
                         required
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+1 (XXX) XXX-XXXX"
                         className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:border-[#457C3C] focus:ring-4 focus:ring-[#457C3C]/10 outline-none transition-all"
                       />
                     </div>
