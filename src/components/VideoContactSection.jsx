@@ -1,130 +1,219 @@
 "use client";
 
-
-
 import {
-    FiPhone,
-    FiMail,
-    FiUser,
-    FiMessageSquare,
+  FiPhone,
+  FiMail,
+  FiUser,
+  FiMessageSquare,
 } from "react-icons/fi";
 
 import emailjs from "@emailjs/browser";
 
 export default function VideoContactSection() {
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-        emailjs
-            .sendForm(
-                "service_5n72u1i", // EmailJS Service ID
-                "template_102fpjv", // EmailJS Template ID
-                e.target,
-                "bfED1bbzcLms9zkik" // EmailJS Public Key
-            )
-            .then(() => {
-                alert("Message sent successfully!");
-                e.target.reset();
-            })
-            .catch((error) => {
-                alert("Failed to send message");
-                console.error(error);
-            });
-    };
+    emailjs
+      .sendForm(
+        "service_5n72u1i",
+        "template_102fpjv",
+        e.target,
+        "bfED1bbzcLms9zkik"
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+        e.target.reset();
+      })
+      .catch((error) => {
+        alert("Failed to send message");
+        console.error(error);
+      });
+  };
 
-    return (
-        <section
-            className="relative bg-[#2E5628] py-12 overflow-hidden bg-cover h-[550px]"
-            style={{
-                backgroundImage: `url('/footerbg3.jpg')`,
-            }}
-        >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-[#193315]/30"></div>
+  return (
+    <section
+      className="
+        relative 
+        bg-[#2E5628] 
+        py-16 md:py-20
+        overflow-hidden 
+        bg-cover 
+        bg-center
+      "
+      style={{
+        backgroundImage: `url('/footerbg3.jpg')`,
+         backgroundPosition: "center top",
+      }}
+    >
 
-            {/* Background Circles */}
-            <div className="absolute right-0 top-0 w-72 h-72 bg-[#193315] rounded-full" />
-            <div className="absolute left-0 bottom-0 w-72 h-72 bg-[#193315] rounded-full" />
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-[#193315]/70"></div>
 
-            <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 px-6">
+      {/* LEFT BLOB */}
+      <div
+        className="
+          absolute 
+          -left-20 
+          bottom-[-60px]
+          w-44 h-44
+          md:w-72 md:h-72
+          bg-[#193315]
+          rounded-full
+          opacity-60
+        "
+      />
 
-                {/* LEFT SIDE */}
-                <div>
-                    <h3 className="text-[#062301] text-3xl mb-6 font-bold">
-                        {"*"} Our Free Service Contact {"*"}
-                    </h3>
-                </div>
+      {/* RIGHT BLOB */}
+      <div
+        className="
+          absolute 
+          -right-16 
+          top-[-50px]
+          w-40 h-40
+          md:w-72 md:h-72
+          bg-[#193315]
+          rounded-full
+          opacity-60
+        "
+      />
 
-                {/* RIGHT SIDE FORM */}
-                <div className="mt-14">
+      {/* CONTENT */}
+      <div
+        className="
+          relative z-10
+          max-w-[1300px]
+          mx-auto
+          grid
+          grid-cols-1 lg:grid-cols-2
+          gap-10 lg:gap-14
+          px-5 md:px-8
+          items-center
+        "
+      >
 
-                    <form
-                        onSubmit={sendEmail}
-                        className="max-w-3xl mx-auto space-y-5 bg-white p-10 rounded-2xl"
-                    >
+        {/* LEFT SIDE */}
+        <div className="text-center lg:text-left">
 
-                        {/* NAME */}
-                        <div className="flex items-center gap-3 border-b py-2">
-                            <FiUser className="text-gray-400" />
+          <h3
+            className="
+              text-white
+              text-3xl md:text-5xl
+              font-bold
+              leading-snug
+            "
+          >
+            * Our Free Service Contact *
+          </h3>
 
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Full Name *"
-                                required
-                                className="w-full outline-none text-sm"
-                            />
-                        </div>
+          <p
+            className="
+              text-gray-200
+              mt-5
+              text-sm md:text-lg
+              max-w-xl
+              mx-auto lg:mx-0
+            "
+          >
+            Connect with our expert team for reliable IT support,
+            antivirus solutions, printer setup, and technical assistance.
+          </p>
+        </div>
 
-                        {/* EMAIL */}
-                        <div className="flex items-center gap-3 border-b py-2">
-                            <FiMail className="text-gray-400" />
+        {/* FORM */}
+        <div className="w-full">
 
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email *"
-                                required
-                                className="w-full outline-none text-sm"
-                            />
-                        </div>
+          <form
+            onSubmit={sendEmail}
+            className="
+              w-full
+              max-w-2xl
+              mx-auto
+              space-y-5
+              bg-white
+              p-6 md:p-10
+              rounded-2xl
+              shadow-2xl
+            "
+          >
 
-                        {/* PHONE */}
-                        <div className="flex items-center gap-3 border-b py-2">
-                            <FiPhone className="text-gray-400" />
+            {/* NAME */}
+            <div className="flex items-center gap-3 border-b py-3">
+              <FiUser className="text-gray-400 text-lg" />
 
-                            <input
-                                type="text"
-                                name="phone"
-                                placeholder="Phone Number *"
-                                required
-                                className="w-full outline-none text-sm"
-                            />
-                        </div>
-
-                        {/* MESSAGE */}
-                        <div className="flex items-start gap-3 border-b py-2">
-                            <FiMessageSquare className="text-gray-400 mt-1" />
-
-                            <textarea
-                                name="message"
-                                placeholder="Message"
-                                rows="3"
-                                className="w-full outline-none text-sm resize-none"
-                            ></textarea>
-                        </div>
-
-                        {/* BUTTON */}
-                        <button
-                            type="submit"
-                            className="w-full bg-[#457C3C] text-white py-3 rounded hover:bg-[#193315] transition"
-                        >
-                            Send
-                        </button>
-                    </form>
-                </div>
+              <input
+                type="text"
+                name="name"
+                placeholder="Full Name *"
+                required
+                className="w-full outline-none text-sm md:text-base"
+              />
             </div>
-        </section>
-    );
+
+            {/* EMAIL */}
+            <div className="flex items-center gap-3 border-b py-3">
+              <FiMail className="text-gray-400 text-lg" />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email *"
+                required
+                className="w-full outline-none text-sm md:text-base"
+              />
+            </div>
+
+            {/* PHONE */}
+            <div className="flex items-center gap-3 border-b py-3">
+              <FiPhone className="text-gray-400 text-lg" />
+
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number *"
+                required
+                className="w-full outline-none text-sm md:text-base"
+              />
+            </div>
+
+            {/* MESSAGE */}
+            <div className="flex items-start gap-3 border-b py-3">
+              <FiMessageSquare className="text-gray-400 text-lg mt-1" />
+
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="4"
+                className="
+                  w-full
+                  outline-none
+                  text-sm md:text-base
+                  resize-none
+                "
+              ></textarea>
+            </div>
+
+            {/* BUTTON */}
+            <button
+              type="submit"
+              className="
+                w-full
+                bg-[#457C3C]
+                text-white
+                py-3 md:py-4
+                rounded-xl
+                hover:bg-[#193315]
+                transition
+                text-sm md:text-base
+                font-medium
+              "
+            >
+              Send Message
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 }

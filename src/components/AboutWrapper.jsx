@@ -67,39 +67,89 @@ export default function AboutWrapper() {
 
 
             {/* HERO SECTION */}
-            <section className="w-full bg-white">
-                <div className="relative flex flex-col lg:flex-row h-[420px]">
+         <section className="w-full bg-white overflow-hidden">
+  <div className="relative flex flex-col lg:flex-row min-h-[420px]">
 
-                    {/* IMAGE */}
-                    <div className="lg:w-1/2 relative min-h-[420px]">
-                        <Image
-                            src="/AboutImg.png"
-                            alt="About"
-                            fill
-                            className="object-cover bg-[#76CE68]"
-                            priority
-                        />
-                    </div>
+    {/* IMAGE */}
+    <div className="lg:w-1/2 relative w-full h-[260px] sm:h-[320px] lg:h-auto">
 
-                    {/* CONTENT */}
-                    <div className="lg:w-1/2 w-full h-full relative bg-[#193315] text-white flex items-center">
+      <Image
+        src="/AboutImg.png"
+        alt="About"
+        fill
+        className="object-cover bg-[#76CE68]"
+        priority
+      />
 
-                        <div className="absolute left-0 top-0 h-full w-24 bg-[#193315] skew-x-[-10deg] origin-top-left hidden lg:block"></div>
+    </div>
 
-                        <div className="relative px-8 lg:px-16 max-w-xl">
-                            <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-                                About US
-                            </h1>
+    {/* CONTENT */}
+    <div
+      className="
+        lg:w-1/2
+        w-full
+        relative
+        bg-[#193315]
+        text-white
+        flex
+        items-center
+        py-12 lg:py-0
+      "
+    >
 
-                            <p className="text-sm leading-relaxed opacity-90">
-                                HowToContact is a trusted help desk service provider offering
-                                reliable IT solutions for small, medium, and large businesses,
-                                as well as home users, across the nation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      {/* SKEW SHAPE */}
+      <div
+        className="
+          absolute
+          left-0
+          top-0
+          h-full
+          w-24
+          bg-[#193315]
+          skew-x-[-10deg]
+          origin-top-left
+          hidden lg:block
+        "
+      />
+
+      {/* CONTENT BOX */}
+      <div
+        className="
+          relative
+          px-6 sm:px-8 lg:px-16
+          max-w-xl
+          text-center lg:text-left
+          mx-auto lg:mx-0
+        "
+      >
+
+        <h1
+          className="
+            text-3xl sm:text-4xl lg:text-5xl
+            font-bold
+            mb-4
+          "
+        >
+          About US
+        </h1>
+
+        <p
+          className="
+            text-sm sm:text-base
+            leading-relaxed
+            opacity-90
+          "
+        >
+          HowToContact is a trusted help desk service provider
+          offering reliable IT solutions for small, medium,
+          and large businesses, as well as home users,
+          across the nation.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
 
             {/* HOW WE WORK */}
             <section className="w-full bg-white py-20">

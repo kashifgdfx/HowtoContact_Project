@@ -134,44 +134,70 @@ export default function Services() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="h-[500px] relative bg-[#2E5628] py-24 overflow-hidden">
+<section className="relative bg-[#2E5628] py-20 md:py-24 overflow-hidden">
 
-        {/* Background circles */}
-        <div className="absolute left-10 bottom-10 w-80 h-80 bg-[#193315] rounded-full" />
+  {/* LEFT CIRCLE */}
+  <div
+    className="
+      absolute 
+      left-[-120px] 
+      bottom-[-120px]
+      w-[220px] h-[220px]
+      md:w-[420px] md:h-[420px]
+      bg-[#193315]
+      rounded-full
+      opacity-70 md:opacity-100
+    "
+  />
 
-        <div className="absolute right-10 top-10 w-56 h-56 bg-[#193315] rounded-full" />
+  {/* RIGHT CIRCLE */}
+  <div
+    className="
+      absolute 
+      right-[-80px] 
+      top-[-80px]
+      w-[160px] h-[160px]
+      md:w-[260px] md:h-[260px]
+      bg-[#193315]
+      rounded-full
+      opacity-70 md:opacity-100
+    "
+  />
 
-        <div className="relative max-w-5xl mx-auto text-center px-4">
+  {/* CONTENT */}
+  <div className="relative z-10 max-w-5xl mx-auto text-center px-5">
 
-          <h2 className="text-white text-4xl md:text-5xl font-light leading-snug mb-6">
-            Still, searching for information technology consulting
-            <br />
-            services for your business?
-          </h2>
+    <h2 className="text-white text-3xl md:text-5xl font-light leading-snug mb-6">
+      Still, searching for information technology consulting
+      <br className="hidden md:block" />
+      services for your business?
+    </h2>
 
-          <p className="text-blue-100 text-lg mb-10">
-            Look no more! Contact us for a quote and let us take care of it.
-          </p>
+    <p className="text-blue-100 text-base md:text-lg mb-10">
+      Look no more! Contact us for a quote and let us take care of it.
+    </p>
 
-          {/* Button */}
-          <Link
-            href="/contact"
-            className="
-              group relative inline-flex items-center justify-center
-              overflow-hidden rounded-full bg-white
-              px-10 py-4 text-lg font-medium
-              text-[#071405] shadow-lg outline-none
-            "
-          >
-            <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
-              Book a technician
-            </span>
+    {/* BUTTON */}
+    <Link
+      href="/contact"
+      className="
+        group relative inline-flex items-center justify-center
+        overflow-hidden rounded-full bg-white
+        px-8 md:px-10 py-3 md:py-4
+        text-base md:text-lg font-medium
+        text-[#071405] shadow-lg outline-none
+      "
+    >
+      <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+        Book a technician
+      </span>
 
-            {/* Hover Fill */}
-            <span className="absolute inset-x-0 bottom-0 h-0 bg-[#193315] transition-all duration-300 ease-out group-hover:h-full" />
-          </Link>
-        </div>
-      </section>
+      {/* HOVER FILL */}
+      <span className="absolute inset-x-0 bottom-0 h-0 bg-[#193315] transition-all duration-300 ease-out group-hover:h-full" />
+    </Link>
+
+  </div>
+</section>
     </>
   );
 }
