@@ -28,7 +28,7 @@ export const metadata = {
 
     images: [
       {
-        url: "https://howtocontact.live/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Printer Support Services",
@@ -47,7 +47,7 @@ export const metadata = {
     description:
       "Professional printer installation, troubleshooting, repair, and maintenance support services available worldwide.",
 
-    images: ["https://howtocontact.live/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
 
   robots: {

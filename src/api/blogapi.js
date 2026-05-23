@@ -10,6 +10,7 @@ export const fetchBlogs = async () => {
     }
 
     return res.json();
+
 };
 
 export const BlogData = async (slug) => {
