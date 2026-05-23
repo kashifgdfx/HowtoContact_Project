@@ -31,7 +31,7 @@ export const metadata={
 
     images: [
       {
-        url:  "https://howtocontact.live/og-image.jpg",
+        url:  "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "How to Contact Technical Support",
@@ -50,7 +50,7 @@ export const metadata={
     description:
       "Global IT consulting, printer support, antivirus, PC repair, and 24/7 technical services worldwide.",
 
-    images: ["https://howtocontact.live/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
 }
 
