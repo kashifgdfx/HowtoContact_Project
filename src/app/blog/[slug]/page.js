@@ -11,12 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-export async function generateStaticParams() {
-  return [
-    { slug: "blog-1" },
-    { slug: "blog-2" },
-  ];
-}
+
 
 import { BlogData } from "@/api/blogapi";
 
