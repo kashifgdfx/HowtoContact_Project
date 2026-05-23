@@ -6,14 +6,56 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-
-
-
 export const metadata = {
+  title: "Software Support & Troubleshooting | How to Contact",
+
+  description:
+    "Expert software support for installation errors, update failures, crashes, and compatibility issues.",
+
+  alternates: {
+    canonical: "https://howtocontact.live/services/software",
+  },
+
+  openGraph: {
     title: "Software Support & Troubleshooting | How to Contact",
+
     description:
-        "Expert software support for installation errors, update failures, crashes, and compatibility issues.",
+      "Expert software support for installation errors, update failures, crashes, and compatibility issues.",
+
+    url: "https://howtocontact.live/services/software",
+
+    siteName: "How to Contact",
+
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "software Support Services",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Software Support & Troubleshooting | How to Contact",
+
+    description:
+      "Expert software support for installation errors, update failures, crashes, and compatibility issues.",
+
+    images: ["/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 const Software = () => {
     const services = [
