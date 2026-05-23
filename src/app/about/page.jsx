@@ -14,7 +14,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Contact Us | How to Contact",
+    title: "About Us | How to Contact",
 
     description:
       "Contact How to Contact for technical support, printer solutions, antivirus services, and IT consulting worldwide.",
